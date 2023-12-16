@@ -7,6 +7,19 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1.5rem',
+        sm: '2rem',
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      }
+    },
     fontFamily: {
       sans: ['var(--font-sans)','sans-serif'],
       heading: ['var(--font-heading)','serif'],
@@ -26,4 +39,5 @@ const config: Config = {
     require('tailwind-scrollbar'),
   ],
 }
+
 export default config
